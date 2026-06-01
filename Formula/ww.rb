@@ -5,20 +5,20 @@
 class Ww < Formula
   desc "Workspace-aware git worktree manager"
   homepage "https://github.com/yoskeoka/ww"
-  version "0.4.5"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yoskeoka/ww/releases/download/v0.4.5/ww_0.4.5_darwin_amd64.zip"
-      sha256 "aaf497c0299e72abc99e3e9ed35ed5e3c0c1bd0712f48393060f0b3a0057c31b"
+      url "https://github.com/yoskeoka/ww/releases/download/v0.5.0/ww_0.5.0_darwin_amd64.zip"
+      sha256 "9d78de9f0b77062870fbfd12630fe5465ceb05217ef2d65610180d776fa6f725"
 
       define_method(:install) do
         bin.install "ww"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yoskeoka/ww/releases/download/v0.4.5/ww_0.4.5_darwin_arm64.zip"
-      sha256 "3739c509759f044f97ea7d684ed523eda53828438b7b730cccc82189f21fd03a"
+      url "https://github.com/yoskeoka/ww/releases/download/v0.5.0/ww_0.5.0_darwin_arm64.zip"
+      sha256 "68e3b008ff0440b4a0e54b0ce88397f378866ce9ba201d0237e91f2a694a21c8"
 
       define_method(:install) do
         bin.install "ww"
@@ -28,15 +28,15 @@ class Ww < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoskeoka/ww/releases/download/v0.4.5/ww_0.4.5_linux_amd64.tar.gz"
-      sha256 "e685a9cec769212ff2f1613ca23abe88ae9e27340efe878e9ac6b98e0ce30818"
+      url "https://github.com/yoskeoka/ww/releases/download/v0.5.0/ww_0.5.0_linux_amd64.tar.gz"
+      sha256 "9c9f55c51544fa7069d2b0612065ee9ab9a7cafdc25c1042e2a70637b6e8c9db"
       define_method(:install) do
         bin.install "ww"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yoskeoka/ww/releases/download/v0.4.5/ww_0.4.5_linux_arm64.tar.gz"
-      sha256 "00ecc1e873153c2a9140e9da97fa60fbde900c7724a45e4bbe26e71611d7d933"
+      url "https://github.com/yoskeoka/ww/releases/download/v0.5.0/ww_0.5.0_linux_arm64.tar.gz"
+      sha256 "413c52509679f277f11de67e45ea50a5e84b83e18dde9a3475d7d2763cf5a7d3"
       define_method(:install) do
         bin.install "ww"
       end
